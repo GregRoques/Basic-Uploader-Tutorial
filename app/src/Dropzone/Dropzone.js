@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, createRef } from 'react'
 import dropzoneStyle from './Dropzone.css'
 
 class Dropzone extends Component {
@@ -7,7 +7,7 @@ class Dropzone extends Component {
         highlight: false
     }
 
-    fileInputRef = React.createRef();
+    fileInputRef = createRef();
 
     openFileDialog = () =>{
         if(this.props.disabled) return;
@@ -38,7 +38,7 @@ class Dropzone extends Component {
     }
     
     onDragLeave = () =>{
-        this.setSTate({ highlight: false })
+        this.setState({ highlight: false })
     }
 
     onDrop = e =>{

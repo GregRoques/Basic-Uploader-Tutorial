@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import progressStyles from './Progress.css'
+import progressStyles from './progress.css'
 
 class Progress extends Component {
   state ={}
