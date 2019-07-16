@@ -5,7 +5,6 @@ module.exports = upload = (req,res) =>{
     var form = new IncomingForm()
 
     form.on('file', (field, file) =>{
-        console.log(field, file)
     })
     form.on('end', ()=>{
         res.json()
